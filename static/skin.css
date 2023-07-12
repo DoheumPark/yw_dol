@@ -5,7 +5,7 @@
 #pure .main img {width: 100%; display: block;}
 #pure .main .moving {/*background-image: url(/storefarm/card/skin/fall_in_love/img/moving2.gif);*/ background-size: cover; background-repeat: no-repeat; height: 100%; position: absolute; top: 0; width: 100%;}
 #pure .main_img_wrap {display: inline-block; width:100%; overflow: hidden; position: relative;}
-#pure .main_img_wrap .gradient {position: absolute; bottom: 0; left: 0; right: 0; background-image: url('/deploy/pyw_dol_party/static/img/white_front.png'); width: 100%; height: 215px;}
+#pure .main_img_wrap .gradient {position: absolute; bottom: 0; left: 0; right: 0; background-image: url('/yw_dol/static/img/white_front.png'); width: 100%; height: 215px;}
 #pure .main .main_txt {padding: 40px 0;}
 #pure .main .main_txt span {font-size: 18px;}
 #pure .main .main_txt font {font-size: 14px;}
@@ -29,8 +29,8 @@
 #pure .remain i {vertical-align: bottom; color: #ff4e7f;}
 
 /* 앨범 가로 */
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {background-image: url('/yw_dol/static/img/left.svg');}
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {background-image: url('/yw_dol/static/img/right.svg');}
+/* .swiper-button-prev, .swiper-container-rtl .swiper-button-next {background-image: url('/yw_dol/static/img/left.svg');}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {background-image: url('/yw_dol/static/img/right.svg');} */
 .swiper-button-next, .swiper-button-prev {background-size: 15px;}
 
 
