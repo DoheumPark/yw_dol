@@ -1,0 +1,165 @@
+* {margin:0; padding: 0; box-sizing: border-box;font-family: 'Pretendard-M'; font-weight: normal;}
+ul,li{list-style: none}
+a{color: #000; text-decoration: none;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;	font-size: 100%;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1; overflow-x: hidden;}
+ol, ul {	list-style: none;}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {	content: '';	content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+::selection {background-color: #f0e9d2;color: #000;	}
+*::-webkit-scrollbar { width: 8px; }
+*::-webkit-scrollbar-track { background-color: #fafafa; border-radius: 100px; }
+*::-webkit-scrollbar-thumb { background-color: #babfc3; border-radius: 100px; }
+* { scrollbar-color: #D4AA70 #e4e4e4; }
+*::-webkit-scrollbar-thumb { box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5); border-radius: 100px; }
+section {}
+/* @font-face {
+    font-family: 'Pre-L';
+    src: url("../font/Pretendard-Light.woff2") format("woff2"),
+        url("../font/Pretendard-Light.woff") format("woff");
+    font-style: normal; font-weight: normal;
+}
+@font-face {
+    font-family: 'Pre-M';
+    src: url("../font/Pretendard-Medium.woff2") format("woff2"),
+        url("../font/Pretendard-Medium.woff") format("woff");
+    font-style: normal; font-weight: normal;
+}
+@font-face {
+    font-family: 'Pre-R';
+    src: url("../font/Pretendard-Regular.woff2") format("woff2"),
+        url("../font/Pretendard-Regular.woff") format("woff");
+    font-style: normal; font-weight: normal;
+}
+@font-face {
+    font-family: 'Pre-B';
+    src: url("../font/Pretendard-Bold.woff2") format("woff2"),
+        url("../font/Pretendard-Bold.woff") format("woff");
+    font-style: normal; font-weight: normal;
+}
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('/storefarm/bcard/font/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('/storefarm/bcard/font/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('/storefarm/bcard/font/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('/storefarm/bcard/font/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GilbeotRainbow';
+    src: url('/storefarm/bcard/font/GilbeotRainbow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HSYuji-Regular';
+    src: url('/storefarm/bcard/font/HSYuji-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('/storefarm/bcard/font/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Balsamtint';
+    src: url('/storefarm/bcard/font/777Balsamtint.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EF_hyunydororong';
+    src: url('/storefarm/bcard/font/EF_hyunydororong.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Dongdong';
+    src: url('/storefarm/bcard/font/Cafe24Dongdong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JGaegujaengyi-Medium-KO';
+    src: url('/storefarm/bcard/font/JGaegujaengyi-Medium-KO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('/storefarm/bcard/font/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('/storefarm/bcard/font/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.inner {width: 800px;margin:0 auto;}
+/* ↓ 체크박스모양 라벨 */
+input.g_input_checkbox {display: none;}
+.g_check {display: inline-block; width: 16px; height: 16px; border: 1px solid #dddddd; margin-right: 3px;  vertical-align: middle; cursor: pointer; text-align: center; border-radius: 4px;}
+.g_check i {opacity: 0; color: #97bde5;}
+/* ↓ 텍스트 */
+.g_check_txt {font-size: 14px; cursor: pointer;  cursor: pointer;}
+input.g_input_checkbox:checked + label.g_check {border: 1px solid #97bde5; border-radius: 4px;}
+input.g_input_checkbox:checked + label.g_check i {opacity: 1;}
+
+*{font-family: 'Pre-M'}
+#card_header {border-bottom: 1px solid #ddd;}
+#card_header .inner {height: 60px; width: 1300px; padding: 0 0 0 50px;}
+#card_header .inner h1 {  float: left; line-height: 58px;}
+#card_header .inner h1 img {display: inline-block; width: 100px;  vertical-align: middle;}
+#card_header .inner span {float: right; display: inline-block; height: 100%; padding: 0 50px; line-height: 60px; font-size: 16px !important; cursor: pointer;}
+#card_header .inner span:nth-of-type(2) {display: none;}
+#card_header .inner span:nth-of-type(1) {background: #97bde5; color: #fff;}
+
+@media screen and (max-width:1200px){
+  .inner  {width: 100%;}
+   #card_header .inner {width: 100%;}
+   #card_header .inner span:nth-of-type(1) {margin-right: 0;}
+   #card_header .inner span:nth-of-type(2) {display: block; background: #f1f1f1;}
+}
+@media screen and (max-width:767px){
+  #card_header .inner span {position: fixed; bottom: 0; width: 50%; z-index: 4; height: 60px; text-align: center; font-size: 14px !important; border-top: 1px solid #ddd;}
+  #card_header .inner span:nth-of-type(1) {right: 0;}
+  #card_header .inner span:nth-of-type(2) {left: 0;  background: #ababab; color: #fff;}
+}

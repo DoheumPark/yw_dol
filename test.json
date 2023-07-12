@@ -1,0 +1,21 @@
+{
+    "parent": { "type": "database_id", "database_id": "9c8424a612b94caf9b196bbb24073aaf" },
+    "properties": {
+        "name": {
+            "type": "title",
+            "title": [{ "type": "text", "text": { "content": "홍길동" } }]
+        },
+        "tel": {
+            "type": "text",
+            "text": "010-3024-9887"
+        },
+        "type": {
+            "type": "text",
+            "text": "이윤지"
+        },
+        "created_at": {
+            "type": "date",
+            "text": "이윤지"
+        }
+  }
+}

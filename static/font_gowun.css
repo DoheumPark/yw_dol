@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('/static/font/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: 'GowunDodum-Regular';}
