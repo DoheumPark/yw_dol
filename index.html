@@ -52,19 +52,26 @@
   <link href="static/maru-buri.css" rel="stylesheet">
   <link href="static/nanum-square-round.css" rel="stylesheet">
 
-  <!-- 우편번호 찾기 -->
-  <script src="static/postcode.v2.js"></script><script charset="UTF-8" type="text/javascript" src="static/221018.js"></script>
-      
+    
   <style>
   body { -webkit-touch-callout:none;}
   img { -webkit-touch-callout: none; pointer-events : none; }
   </style>
       
-  <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+  <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
   
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   
+
+
+  <meta property="og:url" content="https://doheumpark.github.io/yw_dol/">
+  <meta property="og:title" content="💕 박연우 첫 생일 💕">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://doheumpark.github.io/yw_dol/static/main_thumb.jpg">
+  <meta property="og:description" content="2023년 09월 03일 AM11시 30분">
+
+
   <link href="static/skin.css" rel="stylesheet">
   <link href="static/style.css" rel="stylesheet">
   <link href="static/font_gowun.css" rel="stylesheet">
@@ -399,6 +406,7 @@
                 </div>
 
                 <div class="attend_check_wrap">
+                  <form id="attend_frm">
                   <div class="groom_bride_box gb_box1">
                     <span>
                       <input type="radio" name="check_groom_bride" id="check_groom_bride1" value="G" checked="">
@@ -414,60 +422,39 @@
                     </span>
                   </div>
                   <div class="groom_bride_box">
-                    <ul>
-                      <li>
-                        <div class="left">참석여부</div>
-                        <div class="right">
-                          <span>
-                            <input type="radio" name="attend_check" id="attend_check1" value="T" checked="">
-                            <label for="attend_check1">
-                              <i class="xi-check-circle"></i> 참석<i class="xi-check-circle-o"></i>
-                            </label>
-                          </span>
-                          <span>
-                            <input type="radio" name="attend_check" id="attend_check2" value="F">
-                            <label for="attend_check2">
-                              <i class="xi-check-circle"></i> 불참석<i class="xi-check-circle-o"></i>
-                            </label>
-                          </span>
-                        </div>
-                      </li>
+                    <ul>                      
                       <li>
                         <div class="left">성함</div>
                         <div class="right">
                           <input type="text" id="attend_name" name="" value="" maxlength="20">
                         </div>
                       </li>
-                      <li>
+                      <!-- <li>
                         <div class="left">전화번호</div>
                         <div class="right attend_call">
-                          <input type="text" id="sign-mobile1" maxlength="3" class="form-control" value="010">
+                          <input type="text" id="sign_mobile1" maxlength="3" class="form-control" value="010">
                           <span>-</span>
-                          <input type="text" id="sign-mobile2" maxlength="4" class="form-control">
+                          <input type="text" id="sign_mobile2" maxlength="4" class="form-control">
                           <span>-</span>
-                          <input type="text" id="sign-mobile3" maxlength="4" class="form-control">
+                          <input type="text" id="sign_mobile3" maxlength="4" class="form-control">
                         </div>
-                      </li>
+                      </li> -->
                       <li>
-                        <div class="left">식사예정</div>
+                        <div class="left">식사</div>
                         <div class="right">
                           <span>
                             <input type="radio" name="attend_food" id="attend_food1" value="T" checked="">
-                            <label for="attend_food1">
-                              <i class="xi-check-circle"></i> 예정<i class="xi-check-circle-o"></i>
-                            </label>
+                            <label for="attend_food1">⭕</label>
                           </span>
                           <span>
                             <input type="radio" name="attend_food" id="attend_food2" value="F">
-                            <label for="attend_food2">
-                              <i class="xi-check-circle"></i> 미예정<i class="xi-check-circle-o"></i>
-                            </label>
+                            <label for="attend_food2">❌</label>
                           </span>
                         </div>
                       </li>
                     </ul>
                   </div>               
-                  
+                  </form>
                   <span id="attend_sign">참석여부 등록하기</span>
                 </div>
               </div>
@@ -479,16 +466,16 @@
 
         <!-- 카카오공유/청첩장 복사 -->
         <div class="share_wrap anchor_10 wrap_padding">
-          <div style="cursor: pointer;">
+          <div style="cursor: pointer;" id="kakaotalk-sharing-btn">
             <i class="xi-speech"></i> <font>카카오톡으로 공유하기</font>
           </div>
-          <div style="margin-top:20px; cursor: pointer;">
+          <div style="margin-top:20px; cursor: pointer;" onclick="copyToClipboard2('https://doheumpark.github.io/yw_dol/'); alert('초대장 주소를 복사하였습니다.')">
             <img src="static/img/url.svg" alt="" style="height: 14px;"> <font>초대장 주소 복사하기</font>
           </div>
           
         </div>
         <div class="skin_footer">
-          <img src="static/img/copyright.svg" alt="하단로고">
+         
         </div>
       </div>
     </div>
@@ -566,8 +553,38 @@
   </script>
 <script type="text/javascript">
   // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-  Kakao.init('227e6d0ee49b3495ecae429ffd92cf23');
+  Kakao.init('860b3d0b1e646b02f5f6e7e7a7f5af02');
   // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+
+  Kakao.Share.createDefaultButton({
+    container: '#kakaotalk-sharing-btn',
+    objectType: 'feed',
+    content: {
+      title: '연우의 첫 생일에 초대합니다.',
+      description: '2023년 09월 03일 AM11시 30분',
+      imageUrl: 'https://doheumpark.github.io/yw_dol/static/main_thumb.jpg',
+      link: {
+        // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+        mobileWebUrl: 'https://doheumpark.github.io/yw_dol/index.html',
+        webUrl: 'https://doheumpark.github.io/yw_dol/index.html',
+      },
+    },
+    social: {
+      likeCount: 286,
+      commentCount: 45,
+      sharedCount: 845,
+    },
+    buttons: [
+      {
+        title: '초대장 보기',
+        link: {
+          mobileWebUrl: 'https://doheumpark.github.io/yw_dol/index.html',
+          webUrl: 'https://doheumpark.github.io/yw_dol/index.html',
+        },
+      }
+    ],
+  });
+  /*
   Kakao.Link.createDefaultButton({
     container: '#kakao-link-btn',
     objectType: 'location',
@@ -576,22 +593,23 @@
     content: {
       title: '연우의 첫 생일에 초대합니다.',
       description: '2023년 09월 03일 AM11시 30분',
-      imageUrl: 'https://feelcard.co.kr/carddata/bcard/share_img/',
+      imageUrl: 'https://doheumpark.github.io/yw_dol/static/main_thumb.jpg',
       link: {
-        mobileWebUrl: 'https://doheumpark.github.io/deploy/pyw_dol_party/index.html',
-        webUrl: 'https://doheumpark.github.io/deploy/pyw_dol_party/index.html'
+        mobileWebUrl: 'https://doheumpark.github.io/yw_dol/index.html',
+        webUrl: 'https://doheumpark.github.io/yw_dol/index.html'
       }
     },
     buttons: [
       {
         title: '초대장 보기',
-        link: {
-          mobileWebUrl: 'https://doheumpark.github.io/deploy/pyw_dol_party/index.html',
-          webUrl: 'https://doheumpark.github.io/deploy/pyw_dol_party/index.html',
+        link: { 
+          mobileWebUrl: 'https://doheumpark.github.io/yw_dol/index.html',
+          webUrl: 'https://doheumpark.github.io/yw_dol/index.html',
         },
       },
     ]
   });
+  */
 
   function navi(){
     Kakao.Navi.start({
@@ -781,5 +799,37 @@
       });
     });
   </script>
-  
+  <script>
+
+    function leftPad(value) {
+      return value >= 10 ? value : `0${value}`;
+    }
+
+    function toStringByFormatting(source, delimiter = '-') {
+        const year = source.getFullYear();
+        const month = leftPad(source.getMonth() + 1);
+        const day = leftPad(source.getDate());
+
+        return [year, month, day].join(delimiter);
+    }
+
+    const $attendSign = document.getElementById('attend_sign');
+    const $attendFrm = document.getElementById('attend_frm');
+    $attendSign.addEventListener('click', e => {
+
+      const name = $attendFrm.attend_name.value;
+      const who = $attendFrm.check_groom_bride.value === 'G' ? '아빠' : '엄마';      
+      const yn_meal = $attendFrm.attend_food.value === 'T' ? 1 : 0;
+
+      fetch(`https://ywdol.pirbak.workers.dev/?name=${encodeURIComponent(name)}&whoside=${encodeURIComponent(who)}&yn_meal=${yn_meal}`)
+      .then(res => res.json())
+      .then(res => {
+        if(res) {
+          alert('등록되었습니다. 감사합니다!');
+          $('.attend_black').hide();
+          $('.attend_pop_wrap').hide();
+        }
+      })
+    });
+  </script>
 </html>
