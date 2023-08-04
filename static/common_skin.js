@@ -512,10 +512,10 @@ function bgm_player() {
 
   if (bgm.paused) {
     bgm.play();
-    $(".card_bgm").find('img').attr("src", "/static/img/pause.svg");
+    $(".card_bgm").find('img').attr("src", "static/img/pause.svg");
   } else {
     bgm.pause();
-    $(".card_bgm").find('img').attr("src", "/static/img/play.svg");
+    $(".card_bgm").find('img').attr("src", "static/img/play.svg");
   }
 }
 

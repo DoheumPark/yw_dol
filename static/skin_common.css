@@ -277,7 +277,7 @@ button.layer_btn { height: 40px; width: 40px; background: rgba(0, 0, 0, 0.2); bo
 #invite_wrap .groom_bride_box .right {width: calc(100% - 100px); text-align: left; font-family: 'Pre-L' !important;}
 #invite_wrap .groom_bride_box .right input {margin-bottom: 0;}
 #invite_wrap .groom_bride_box .right input.attend_group{width: 25%;}
-#invite_wrap .groom_bride_box .right span {width: 100px; text-align: center;}
+#invite_wrap .groom_bride_box .right span {width: 95px; text-align: center;}
 #invite_wrap .groom_bride_box .right span label {padding: 8px;}
 
 #invite_wrap .groom_bride_box .attend_call {display: flex;align-items: center;}
