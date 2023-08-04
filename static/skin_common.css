@@ -103,8 +103,11 @@ button.layer_btn { height: 40px; width: 40px; background: rgba(0, 0, 0, 0.2); bo
 #invite_wrap #gallery_type_1 .swiper-button-prev {top: calc(50% + 20px) !important;}
 
 /* 앨범 바둑판 */
-#invite_wrap .slide_inner {opacity: 0; z-index: -1; position: fixed; top: 50%; left: -100%; width: 100%; max-width:420px; transform: translate(-50%, -50%); background-color: #fff; padding: 5px;}
-#invite_wrap .slide_inner.on {opacity: 1; z-index: 2; left: 50%;}
+
+#invite_wrap .slide_inner_container { opacity: 0; position: fixed; left: 0; top: 0; width: 100%; height: 100%; display: flex; z-index: -1; align-items: center; }
+#invite_wrap .slide_inner_container.on { opacity: 1; z-index: 2; }
+#invite_wrap .slide_inner { width: 100%; max-width:420px; background-color: #fff; padding: 5px;}
+/*#invite_wrap .slide_inner.on { opacity: 1; z-index: 2; }*/
 
 #invite_wrap .album_black {position: fixed; background-color: rgba(0,0,0,0.5); top: 0; left: 0; bottom: 0; right: 0; display: none; z-index: 2;}
 #invite_wrap .album_black.on {display: block;}
